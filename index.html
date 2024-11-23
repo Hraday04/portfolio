@@ -8,8 +8,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
 </head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <body>
@@ -25,8 +26,10 @@
 
         <nav class="navbar">
             <a href="#home" class="logo">HRADAY <span id="sur">MACHHI</span></a>
+            <audio src="sound-effects/UI_button_click.ogg" id="myAudioElement"></audio>
 
             <div id="navbar">
+                <audio id="navbarAudioElement" src="sound-effects/navbar-hover.wav"></audio>
             <a href="#home" class="active">Home</a>
             <a href="#education">Education</a>
             <a href="#services">Services</a>
@@ -79,7 +82,7 @@
                             <p>PERCENTAGE: 77.77%
                                 <br>BOARD: GSEB
                                 <br>SCHOOL:  SHREE AMBE VIDHYALAYA</p><br>
-                                <a>Marksheet</a>
+                                <a href="https://drive.google.com/file/d/1o_f_LgrxYY5yhBXxq0Wg4KO8L8uEQ8fF/view?usp=drive_link" target="_blank">Marksheet</a>
                             </p>
                         </div>          
                     </div>
@@ -92,6 +95,7 @@
                                     <p>PERCENTAGE: 67.77%<br>
                                         BOARD: GSEB<br>
                                         SCHOOL:  Shree Swami Vivekanand Vidhyalaya-2</p>
+                                        <a href="https://drive.google.com/file/d/1aW_WbTbhLOCk9UZ6ownt7_euef1_MhXy/view?usp=drive_link" target="_blank">Marksheet</a>
                                     </p>
                                 </div>
                             </div>
@@ -104,7 +108,11 @@
                                             <h3>College</h3>
                                             <p>SPI:7.84<br>
                                             BOARD:GTU<br>
-                                            COLLEGE:Sardar Vallabhbhai Patel Institute of Technology
+                                            COLLEGE:Sardar Vallabhbhai Patel Institute of Technology</p>
+                                            <a href="https://drive.google.com/file/d/1pAukVAtGYRazDSJpLN1v4i8EE3DiCv1Y/view?usp=drive_link" target="_blank">Sem-1 Ms</a>
+                                            <a href="https://drive.google.com/file/d/1y8SvH0iCkoWEM5IYfUfMonyBgaue4LAh/view?usp=sharing" target="_blank">Sem-2 Ms</a>
+                                            <a href="https://drive.google.com/file/d/1kgonhM2iKGvw1BM7L7iWwYmNyIsIsmF5/view?usp=drive_link" target="_blank">Sem-3 Ms</a>
+                                            <a href="https://drive.google.com/file/d/1iaeqYoS9D5xj03NM9WIlGDQVTpCwUpDM/view?usp=drive_link" target="_blank">Sem-4 Ms</a>
                                         </div>
                                     </div>     
             </div>
@@ -147,7 +155,52 @@
         <section class="projects" id="projects">
                 <h2 class="heading">Projects</h2>
         <div class="projects-box">
-                <h4>Taskmaster</h4>
+                <h3><a href="https://66750876769ada179d58df58--kaleidoscopic-dragon-650c5a.netlify.app/" target="_blank">=> Taskmaster</a></h3> <br>
+                <p>Taskmaster is a web app built with React.js and Tailwind CSS, offering an intuitive task management tool. Features include:</p>
+
+                    <ul>- Editing, deleting, and completing tasks</ul>
+                    <ul>- Filtering completed tasks</ul>
+                    <ul>-Clean,modern interface</ul>
+                    
+                  <p>Taskmaster helps users stay organized, focused, and productive, making it easier to conquer their to-do lists.</p>
+
+                  <br>
+                  <hr>
+                  <br>
+                  <br>
+
+                <h3><a href="https://taupe-panda-2ceef5.netlify.app/" target="_blank">=> Music Player</a></h3>
+                <p>Introducing MusicPlayer, a web-based music player. This JavaScript-powered platform stores songs in a JS file, allowing users to play, pause, and navigate through tracks. Features include: </p>
+                    
+                   <ul>- Interactive playback controls</ul>
+                    <ul>- Track listing and navigation</ul>
+                   <ul>- Simple, responsive design</ul>
+                    
+                   <p> MusicHub provides an elegant and user-friendly music streaming experience.</p>
+
+                   <br>
+                   <hr>
+                   <br>
+                   <br>
+
+                <h3><a href="https://hraday04.github.io/SimonSays/" target="_blank">=> Simon Says</a></h3>
+                <p>Introducing Simon Says Game!</p>
+                    
+                    <ul>*Game Rules:*</ul>
+                    
+                    <ul>1. Follow color sequences commanded by Simon.</ul>
+                    <ul>2. Repeat sequence by clicking colors.</ul>
+                    <ul>3. Failure to match sequence ends game.</ul>
+                    
+                    <ul>*Website Features:*</ul>
+                    
+                    <ul>- Interactive 4-color grid (red, green, yellow, blue)</ul>
+                    <ul>- Randomized Simon commands</ul>
+                    <ul>- Score tracking</ul>
+                    <ul>- Responsive design</ul>
+                    <ul>- Simple, intuitive gameplay</ul>
+                    
+                    <p>Test your memory and reflexes!</p>
         </div>
         </section>
 
@@ -176,10 +229,17 @@
 
             <footer class="footer">
                 <div class="social">
-                    <a href="https://www.linkedin.com/in/hraday-machhi-5a881b291/" class="soc" target="main"><img src="linkedin.jpeg"></a>
-                    <a href="https://github.com/Hraday04" class="soc" target="main"><img src="github.jpeg"></a>
-                    <a href="https://www.instagram.com/rishi_s_back/" class="soc" target="main"><img src="instagram-brands-solid.svg" style="background-color: white"></a>
-                    <a href="https://x.com/HradayMachhi" class="soc" target="main"><img src="x.jpeg"></a>
+                    <!-- <a href="https://www.linkedin.com/in/hraday-machhi-5a881b291/" class="soc" target="main"><img src="linkedin.jpeg"></a> -->
+                    <a href="https://www.linkedin.com/in/hraday-machhi-5a881b291/" class="soc" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+
+                    <!-- <a href="https://github.com/Hraday04" class="soc" target="main"><img src="github.jpeg"></a> -->
+                    <a href="https://github.com/Hraday04" class="soc" target="_blank"><i class="fa-brands fa-github"></i></a>
+
+                    <!-- <a href="https://www.instagram.com/rishi_s_back/" class="soc" target="main"><img src="instagram-brands-solid.svg" style="background-color: white"></a> -->
+                    <a href="https://www.instagram.com/Deepak_ka_laal_" class="soc" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+
+                    <!-- <a href="https://x.com/HradayMachhi" class="soc" target="main"><img src="x.jpeg"></a> -->
+                    <a href="https://x.com/HradayMachhi" class="soc" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
                 </div>
 
                 <ul class="list">
@@ -200,7 +260,7 @@
                     </li>
 
                     <li>
-                        <a href="#testimonials">Testimonials</a>
+                        <a href="#projects">Projects</a>
                     </li>
                 </ul>
 
@@ -209,3 +269,7 @@
 </body>
 <script src="script.js"></script>
 </html>
+
+
+
+

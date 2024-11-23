@@ -473,6 +473,50 @@ a.logo{
     justify-content: left;
 }
 
+.timeline-content a{
+color: yellow;
+margin: 5px;
+}
+
+.projects .heading:hover{
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+
+.projects-box{
+    padding: 50px 15px;
+    background: black;
+}
+
+.projects-box a{
+    color: white;
+    margin: 5px;
+}
+
+.projects-box p{
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+.projects-box ul{
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+.projects-box h3{
+    font-size: 35px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.projects-box h3 a:hover{
+    color: yellow;
+    transition: 0.3s ease-in-out;
+    text-decoration: underline;
+}
+
 
 .timeline-items::before{
     content: "";
@@ -918,3 +962,4 @@ h2.heading{
         grid-template-columns: repeat(1,1fr);
     }
 }
+

@@ -31,5 +31,25 @@ menuIcon.onclick = () =>{
         }
 }
 
+//Set up the audio elements
+
+let logo = document.querySelector('.logo');
+let homeImg = document.querySelector('.home-img');
+let myAudioElement = document.querySelector('#myAudioElement'); 
+let navbarAudioElement = document.querySelector('#navbarAudioElement');
+
+logo.onmouseover = () => {
+    myAudioElement.play();
+};
+
+homeImg.onmouseover = () => {
+    myAudioElement.play();
+};
+
+navbar.onclick = () => {
+    navbarAudioElement.play();
+};
+
+
     
 
