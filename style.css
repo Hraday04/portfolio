@@ -1,22 +1,22 @@
-*{
+* {
     font-family: "Quantico", sans-serif;
     font-weight: 400;
-    font-style: normal;    
+    font-style: normal;
     caret-color: yellow;
     scroll-behavior: smooth;
 }
 
-html{
+html {
     font-size: 60%;
     overflow-x: hidden;
 }
 
-body{
-    background:  rgb(0, 0, 0);
+body {
+    background: rgb(0, 0, 0);
     color: rgb(233, 237, 21);
 }
 
-.navbar{
+.navbar {
     position: fixed;
     top: 0;
     left: 0;
@@ -28,23 +28,23 @@ body{
     height: 75px;
 }
 
-#menu-icon-list{
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        width: 100%;
-        background-color: black;
-        
-        z-index: 1000;
+#menu-icon-list {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: black;
+
+    z-index: 1000;
 }
 
-.header{
+.header {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 4rem 4rem; 
+    padding: 4rem 4rem;
     background: black;
     backdrop-filter: blur(10px);
     display: flex;
@@ -53,58 +53,58 @@ body{
     z-index: 5;
 }
 
-.logo{
+.logo {
     font-size: 3rem;
-    color:  rgb(233, 237, 21);
+    color: rgb(233, 237, 21);
     font-weight: 800;
     cursor: pointer;
     transition: 0.3s ease;
 }
 
-.logo:hover{
+.logo:hover {
     transform: scale(1.1);
-    border: 3px solid  rgb(233, 237, 21);
+    border: 3px solid rgb(233, 237, 21);
 }
 
-.logo span{
-    text-shadow: 0 0 25px  rgb(233, 237, 21);
+.logo span {
+    text-shadow: 0 0 25px rgb(233, 237, 21);
 }
 
-.navbar a{
+.navbar a {
     font-size: 1.8rem;
-    color:  rgb(233, 237, 21);
+    color: rgb(233, 237, 21);
     margin-left: 4rem;
     font-weight: 500;
     transition: 0.3s ease;
-    border-bottom: 3px solid  transparent;
+    border-bottom: 3px solid transparent;
 }
 
 .navbar a:hover,
-.navbar a.active{
+.navbar a.active {
     color: rgb(233, 237, 21);
-    border-bottom: 3px solid  rgb(233, 237, 21);
+    border-bottom: 3px solid rgb(233, 237, 21);
 }
 
-#menu-icon{
+#menu-icon {
     font-size: 3.6rem;
-    color:  rgb(233, 237, 21);
+    color: rgb(233, 237, 21);
     display: none;
     cursor: pointer;
 }
 
-.section{
+.section {
     min-height: 100vh;
     padding: 10rem 12% 10rem;
 }
 
-.home{
+.home {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 15rem;
 }
 
-.home-content{
+.home-content {
     height: 80vh;
     width: 90vw;
     display: flex;
@@ -115,28 +115,28 @@ body{
     margin-top: 3rem;
 }
 
-span{
+span {
     color: rgb(233, 237, 21);
 }
 
-.logo span{
+.logo span {
     color: rgb(233, 237, 21);
 }
 
-.home-content h3{
+.home-content h3 {
     margin-bottom: 2rem;
     margin-top: 1rem;
     font-size: 3.5rem;
 }
 
-.home-content h1{
+.home-content h1 {
     font-size: 6rem;
     font-weight: 600;
     margin-top: 1.5rem;
     line-height: 1;
 }
 
-#img{
+#img {
     border: 3px solid black;
     float: right;
     width: 100px;
@@ -144,15 +144,16 @@ span{
     position: absolute;
     right: 50%;
     transform: translatex(40%);
-    margin-top: 0px; ;
+    margin-top: 0px;
+    ;
 }
 
-.home-img{
-    border-radius:7px ;
+.home-img {
+    border-radius: 7px;
     box-shadow: 0 0 25px rgb(233, 237, 21);
 }
 
-.home-img img{
+.home-img img {
     position: relative;
     top: 3rem;
     width: 32vw;
@@ -162,20 +163,20 @@ span{
     transition: 0.4s ease-in-out;
 }
 
-.home-img img:hover{
+.home-img img:hover {
     box-shadow: 0 0 25px rgb(233, 237, 21),
-    0 0 50px rgb(233,237,21);
-    
+        0 0 50px rgb(233, 237, 21);
+
 }
 
-.home-content p{
+.home-content p {
     font-size: 1.5rem;
     font-weight: 500;
     line-height: 1.8;
     max-width: 1000px;
 }
 
-.details{
+.details {
     display: flex;
     gap: 2rem;
     margin-top: 3rem;
@@ -183,7 +184,7 @@ span{
     line-height: 150%;
 }
 
-.social-icons{                                    
+.social-icons {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -199,16 +200,16 @@ span{
     /* position: relative;
     top: 60px; 
     right: 0px;  */
-} 
+}
 
-.social-icons a:hover{
+.social-icons a:hover {
     color: rgb(233, 237, 21);
     transform: scale(1.3)translateY(-5px);
-   box-shadow: 0 0 25px rgb(233, 237, 21);
+    box-shadow: 0 0 25px rgb(233, 237, 21);
     background-color: rgb(233, 237, 21);
 }
 
-.btn{
+.btn {
     display: inline-block;
     padding: 1rem 2.8rem;
     background-color: rgb(233, 237, 21);
@@ -223,7 +224,7 @@ span{
     cursor: pointer;
 }
 
-.btn-group{
+.btn-group {
     display: flex;
     align-items: center;
     gap: 1.5rem;
@@ -235,91 +236,91 @@ span{
     margin-top: 10rem;
 }
 
-.btn:hover{
+.btn:hover {
     transform: scale(1.1);
     box-shadow: 0 0 50px rgb(233, 237, 21);
 }
 
-.btn-group a:nth-of-type(2){
+.btn-group a:nth-of-type(2) {
     background-color: black;
     color: rgb(233, 237, 21);
-    border: 2px solid rgb(233,237,21);
-    box-shadow: 0 0 25px transparent; 
+    border: 2px solid rgb(233, 237, 21);
+    box-shadow: 0 0 25px transparent;
 }
 
-.btn-group a:nth-of-type(2):hover{
+.btn-group a:nth-of-type(2):hover {
     box-shadow: 0 0 25px rgb(233, 237, 21);
     background-color: rgb(233, 237, 21);
     color: black;
 }
 
-#hire{
+#hire {
     color: black;
 }
 
-.i{
+.i {
     color: rgb(233, 237, 21);
 }
 
-h3{
-    display:inline;
+h3 {
+    display: inline;
     font-size: small;
 }
 
-#id{
+#id {
     color: white;
     display: inline;
     left: 25px;
 }
 
-#sur{
+#sur {
     color: white;
-} 
+}
 
-.text-animation{
+.text-animation {
     display: inline;
 }
 
-#name{
+#name {
     display: inline;
 }
 
-.logo{
+.logo {
     position: absolute;
     top: 38px;
     left: 10px;
     font-size: 19px;
 }
 
-#img{
-    height:300px;
+#img {
+    height: 300px;
     width: 300px;
     top: 200px;
     right: 300px;
 }
 
-#info{
+#info {
     height: 100px;
     width: 50%;
 }
 
-.text-animation{
+.text-animation {
     font-size: 34px;
     font-weight: 600;
     min-width: 280px;
 }
 
-.text-animation span{
+.text-animation span {
     position: relative;
 }
 
-.text-animation span::before{
+.text-animation span::before {
     content: "Web Developer";
     color: rgb(233, 237, 21);
-    animation: words 20s infinite;   
+    animation: words 20s infinite;
 }
 
-.text-animation span::after{
+.text-animation span::after {
     content: "";
     background-color: rgb(0, 0, 0);
     position: absolute;
@@ -327,10 +328,10 @@ h3{
     height: 100%;
     border-left: 3px solid rgb(0, 0, 0);
     right: -10px;
-    animation: cursor 0.6s infinite,typing 20s steps(14) infinite;
+    animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
 }
 
-#menu-icon-list{
+#menu-icon-list {
     display: none;
     height: fit-content;
     width: fit-content;
@@ -345,50 +346,57 @@ h3{
     box-shadow: yellow 0 0 25px;
 }
 
-#menu-icon-list a{
+#menu-icon-list a {
     color: white;
     padding: 7px 7px 7px 7px;
     line-height: 3px;
 
 }
 
-#menu-icon-list:hover{
+#menu-icon-list:hover {
     transform: scale(1.1);
     transition: 0.3s ease-in-out;
     text-decoration: underline;
-   
-    
+
+
 }
 
-@keyframes cursor{
-    to{
+@keyframes cursor {
+    to {
         border-left: 2px solid rgb(0, 0, 0);
     }
 }
 
-@keyframes words{
-    0%,20%{
+@keyframes words {
+
+    0%,
+    20% {
         content: "Frontend Designer";
     }
 
-    21%,40%{
+    21%,
+    40% {
         content: "Web Designer";
     }
 
-    41%,60%{
+    41%,
+    60% {
         content: "UI Designer";
     }
 
-    61%,80%{
+    61%,
+    80% {
         content: "UX Developer";
     }
 
-    81%,100%{
+    81%,
+    100% {
         content: "Memer";
     }
 }
 
-@keyframes typing{
+@keyframes typing {
+
     10%,
     15%,
     30%,
@@ -398,9 +406,10 @@ h3{
     70%,
     75%,
     90%,
-    95%{
+    95% {
         width: 0;
     }
+
     5%,
     20%,
     25%,
@@ -409,24 +418,24 @@ h3{
     60%,
     65%,
     80%,
-    90%{
+    90% {
         width: calc(100% + 8px);
     }
 }
 
-#navbar{
+#navbar {
     position: relative;
     text-align: right;
     padding-top: 3rem;
 }
 
-a.logo{
+a.logo {
     border: 2px solid white;
-    border-right:2px solid yellow;
+    border-right: 2px solid yellow;
     padding: 2px 2px 2px;
 }
 
-#sur{
+#sur {
     border: 2px solid yellow;
     padding: 2px 2px 2px 2px;
     padding-right: 6px;
@@ -434,76 +443,76 @@ a.logo{
     border-right: yellow;
 }
 
-#id{
+#id {
     position: absolute;
     top: 250px;
     left: 100px;
 }
 
-.name{
+.name {
     position: absolute;
     top: 250px;
     left: 275px;
 }
 
-.heading{
+.heading {
     font-size: 8rem;
     text-align: center;
     margin: 5rem 0;
 }
 
-.education{
+.education {
     padding: 100px 15px;
     background: black;
 }
 
-.education h2{
+.education h2 {
     margin-bottom: 5rem;
     color: yellow;
     cursor: pointer;
 }
 
-.education h2:hover{
+.education h2:hover {
     color: white;
     transition: ease-in-out 0.4s;
 }
 
-#yhsc{
+#yhsc {
     width: 100%;
     justify-content: left;
 }
 
-.timeline-content a{
-color: yellow;
-margin: 5px;
+.timeline-content a {
+    color: yellow;
+    margin: 5px;
 }
 
-.projects .heading:hover{
+.projects .heading:hover {
     color: white;
     transition: 0.3s ease-in-out;
 }
 
-.projects-box{
+.projects-box {
     padding: 50px 15px;
     background: black;
 }
 
-.projects-box a{
+.projects-box a {
     color: white;
     margin: 5px;
 }
 
-.projects-box p{
+.projects-box p {
     font-size: 20px;
     margin-left: 15px;
 }
 
-.projects-box ul{
+.projects-box ul {
     font-size: 20px;
     margin-left: 15px;
 }
 
-.projects-box h3{
+.projects-box h3 {
     font-size: 35px;
     margin-top: 20px;
     margin-left: 20px;
@@ -511,14 +520,14 @@ margin: 5px;
     margin-bottom: 20px;
 }
 
-.projects-box h3 a:hover{
+.projects-box h3 a:hover {
     color: yellow;
     transition: 0.3s ease-in-out;
     text-decoration: underline;
 }
 
 
-.timeline-items::before{
+.timeline-items::before {
     content: "";
     position: absolute;
     width: 5px;
@@ -527,7 +536,7 @@ margin: 5px;
     left: calc(50% -1px);
 }
 
-.timeline-date{
+.timeline-date {
     position: inherit;
     font-size: 20px;
     font-weight: 800;
@@ -535,30 +544,33 @@ margin: 5px;
     margin: 6px 0 15px;
     position: absolute;
 }
-.timeline-date{
+
+.timeline-date {
     display: flex;
-    padding-right: 50px;;
+    padding-right: 50px;
+    ;
 }
 
 .timeline-content {
     background-color: black;
     border: 3px solid yellow;
     padding: 30px 50px;
-    order: 2; /* Display this second */
+    order: 2;
+    /* Display this second */
     /* position: relative; */
 }
 
-#yhsc{
+#yhsc {
     float: left;
 }
 
-.timeline-content #y2022{
-    float:left;
+.timeline-content #y2022 {
+    float: left;
     left: 5px;
     margin-left: 15px;
 }
 
-.timeline-content{
+.timeline-content {
     background-color: black;
     border: 3px solid yellow;
     padding: 30px 50px;
@@ -577,87 +589,88 @@ margin: 5px;
     width: 38.5%;
 }
 
-.timeline-content:hover{
+.timeline-content:hover {
     transform: scale(1.1);
     box-shadow: 0 0 25px yellow;
 }
 
-.timeline-content h3{
+.timeline-content h3 {
     font-size: 20px;
     color: white;
     margin: 0 0 10px;
     font-weight: 500;
 }
 
-.timeline-content p{
+.timeline-content p {
     color: white;
     font-size: 16px;
     font-weight: 300;
     line-height: 22px;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     width: 15px;
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
     background-color: black;
 }
 
-::-webkit-scrollbar-track{
-    background-color:black;
+::-webkit-scrollbar-track {
+    background-color: black;
     width: 50px;
 }
 
-.div{
-    overflow:scroll;
+.div {
+    overflow: scroll;
     max-height: 100px;
 }
 
-.card{ 
+.card {
     display: flex;
     justify-content: end;
     width: 100%;
 }
 
-#yhsc{
+#yhsc {
     text-align: right;
 }
 
-#y2022{
-    position:absolute;
+#y2022 {
+    position: absolute;
     justify-content: right;
     /* right: 700px; */
 }
-.section-container{
+
+.section-container {
     display: flex;
     flex-direction: column;
-    
+
 }
 
-.section{
+.section {
     width: 100vw;
     display: flex;
     justify-content: end;
 }
 
-.education-card{
+.education-card {
     width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: start;
 }
 
-.card{
+.card {
     display: flex;
 }
 
-.services{
+/* .services{
     background: black;
     color: black;
-}
+} */
 
-.services h2{
+/* .services h2{
     margin-bottom: 5 rem;
     color: yellow;
     cursor: pointer;
@@ -686,25 +699,25 @@ margin: 5px;
 
 /* .service-box :hover{
     /* background-color: yellow; */
-    /* color : yellow; */
-    /* border: 5px solid yellow; */
-    /* transform: scale(1.3);
+/* color : yellow; */
+/* border: 5px solid yellow; */
+/* transform: scale(1.3);
     transition: 0.4s ease-in-out; */
-    /* background-color: black;
+/* background-color: black;
     border-radius: 2.5rem;
     transition: ease-in-out 0.4s;
     transform: scale(1.03); */
-    /* box-shadow: 0 0 25px yellow; */
-    /* border: 5px solid yellow; */
- 
-.service-box :hover{
-    transform: scale(1.1);
-    /* box-shadow: 0 0 25px yellow; */
-    transition: ease-in-out 0.4s;
-    /* border: 5px solid yellow; */
-}
+/* box-shadow: 0 0 25px yellow; */
+/* border: 5px solid yellow; */
 
-.service-info{
+/* .service-box :hover{ 
+    transform: scale(1.1);
+     box-shadow: 0 0 25px yellow; 
+    /transition: ease-in-out 0.4s; 
+     border: 5px solid yellow; 
+} */
+
+/* .service-info{
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -712,6 +725,11 @@ margin: 5px;
     justify-content: left;
     align-items: baseline;
     padding: 5rem 5rem;     
+}
+
+.service-info i{
+    font-size: 3rem;
+    color: black;
 }
 
 .service-info h4{
@@ -732,7 +750,141 @@ margin: 5px;
     background-color: white;
     border-radius: 7%;
     transition: 0.3s ease-in-out;
+}  */
+
+/*SERVICES*/
+
+/* Enhanced Services Section Styling */
+.services {
+    background: black;
+    color: black;
+    padding: 6rem 0;
 }
+
+.services h2 {
+    margin-bottom: 5rem;
+    color: yellow;
+    cursor: pointer;
+    transition: color 0.4s ease-in-out;
+}
+
+.services h2:hover {
+    color: white;
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    padding: 0 3rem;
+}
+
+.service-box {
+    background-color: yellow;
+    height: auto;
+    min-height: 300px;
+    border-radius: 3rem;
+    border: 5px solid transparent;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    position: relative;
+}
+
+.service-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(255, 255, 0, 0.2);
+}
+
+.service-box:hover::before {
+    width: 100%;
+    opacity: 0.1;
+}
+
+.service-info {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: flex-start;
+    padding: 4rem;
+    height: 100%;
+    transition: background-color 0.3s ease-in-out;
+    position: relative;
+    z-index: 1;
+}
+
+.service-info h4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.service-info h4::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background-color: black;
+    transition: width 0.3s ease-in-out;
+}
+
+
+
+.service-info p {
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.7;
+    margin: 0;
+}
+
+
+
+/* Add icon styling */
+.service-icon {
+    font-size: 3rem;
+    margin-left: 1rem;
+    color: black;
+    transition: transform 0.3s ease;
+
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+    .services-container {
+        grid-template-columns: 1fr;
+        padding: 0 2rem;
+    }
+
+    .service-box {
+        margin-bottom: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .service-info {
+        padding: 3rem;
+    }
+
+    .service-info h4 {
+        font-size: 2.5rem;
+    }
+
+    .service-info p {
+        font-size: 1.4rem;
+    }
+}
+
+/*CONTACT/
+
 .contact{
     background-color: black;
 }
@@ -962,4 +1114,3 @@ h2.heading{
         grid-template-columns: repeat(1,1fr);
     }
 }
-
