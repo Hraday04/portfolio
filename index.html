@@ -8,15 +8,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js"></script>
 </head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<body>
-        <i class='bx bx-menu' id="menu-icon"></i>
 
-        <div id="menu-icon-list" style="display: none;">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<body>
+
+    
+        <!-- <i class='bx bx-menu' id="menu-icon"></i>
+
+        <div id="menu-icon-list">
             <a href="#home" >Home</a>
             <a href="#education">Education</a>
             <a href="#services">Services</a>
@@ -36,7 +42,68 @@
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
             </div>
-        </nav>
+        </nav> -->
+
+        <!-- <nav class="navbar">
+    <a href="#home" class="logo">HRADAY <span id="sur">MACHHI</span></a>
+    <i class='bx bx-menu' id="menu-icon"></i>
+    <div id="menu-icon-list" style="display: none;">
+        <a href="#home">Home</a>
+        <a href="#education">Education</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
+    <div id="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#education">Education</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <a class="navbar-brand" href="#home">HRADAY <span id="sur">MACHHI</span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#education">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    ...
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
 
             
             <section class="home" id="home">
@@ -52,24 +119,12 @@
                  <div class="home-img">
                     <img src="Hraday.jpeg" alt="Hraday" id="img" style="object-fit: cover;">
                 </div>
-
-                    <!-- <div class="social-icons">
-                        <a href="#" class="soc"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="#" class="soc"><i class="fa-brands fa-square-github"></i></a>
-                        <a href="#" class="soc"><i class='bx bxl-instagram' ></i></a>
-                        <a href="#" class="soc"><i class='bx bxl-twitter'></i></a>
-                    </div> -->
-
-                    <!-- <div class="btn-group">
-                        <a href="#" class="btn" id="hire">Hire</a>
-                        <a href="contact" class="btn">Contact</a>
-                    </div> -->
                 </div>
             </section>
 
 
 
-        <section class="education" id="education">
+        <!-- <section class="education" id="education">
             <h2 class="heading">Education</h2>
 
             <div class="timeline-items">
@@ -116,99 +171,218 @@
                                         </div>
                                     </div>     
             </div>
-        </section>
+        </section> -->
 
+        <section class="education" id="education">
+    <h2 class="heading">Education</h2>
+    
+    <div class="education-timeline">
+        <!-- SSC -->
+        <div class="education-item">
+            <div class="education-year">2020</div>
+            <div class="education-card">
+                <h3>S.S.C.</h3>
+                <div class="education-details">
+                    <p><strong>Percentage:</strong> 77.77%</p>
+                    <p><strong>Board:</strong> GSEB</p>
+                    <p><strong>School:</strong> SHREE AMBE VIDHYALAYA</p>
+                    <div class="education-links">
+                        <a href="https://drive.google.com/file/d/1o_f_LgrxYY5yhBXxq0Wg4KO8L8uEQ8fF/view?usp=drive_link" target="_blank">
+                            <i class="bx bx-link-external"></i> View Marksheet
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- HSC -->
+        <div class="education-item">
+            <div class="education-year">2022</div>
+            <div class="education-card" id="hsc">
+                <h3>H.S.C.</h3>
+                <div class="education-details">
+                    <p><strong>Percentage:</strong> 67.77%</p>
+                    <p><strong>Board:</strong> GSEB</p>
+                    <p><strong>School:</strong> Shree Swami Vivekanand Vidhyalaya-2</p>
+                    <div class="education-links">
+                        <a href="https://drive.google.com/file/d/1aW_WbTbhLOCk9UZ6ownt7_euef1_MhXy/view?usp=drive_link" target="_blank">
+                            <i class="bx bx-link-external"></i> View Marksheet
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- College -->
+        <div class="education-item">
+            <div class="education-year">2023-24</div>
+            <div class="education-card">
+                <h3>College</h3>
+                <div class="education-details">
+                    <p><strong>SPI:</strong> 7.84</p>
+                    <p><strong>Board:</strong> GTU</p>
+                    <p><strong>College:</strong> Sardar Vallabhbhai Patel Institute of Technology</p>
+                    <div class="education-links">
+                        <a href="https://drive.google.com/file/d/1pAukVAtGYRazDSJpLN1v4i8EE3DiCv1Y/view?usp=drive_link" target="_blank">
+                            <i class="bx bx-link-external"></i> Sem-1 Marksheet
+                        </a>
+                        <a href="https://drive.google.com/file/d/1y8SvH0iCkoWEM5IYfUfMonyBgaue4LAh/view?usp=sharing" target="_blank">
+                            <i class="bx bx-link-external"></i> Sem-2 Marksheet
+                        </a>
+                        <a href="https://drive.google.com/file/d/1kgonhM2iKGvw1BM7L7iWwYmNyIsIsmF5/view?usp=drive_link" target="_blank">
+                            <i class="bx bx-link-external"></i> Sem-3 Marksheet
+                        </a>
+                        <a href="https://drive.google.com/file/d/1iaeqYoS9D5xj03NM9WIlGDQVTpCwUpDM/view?usp=drive_link" target="_blank">
+                            <i class="bx bx-link-external"></i> Sem-4 Marksheet
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
+<div>
     <section class="services" id="services">
     <h2 class="heading">Services</h2>
     <div class="services-container">
         <div class="service-box">
             <div class="service-info">
-                <h4>UI Designer</h4>
-                <span><i class='bx bx-palette service-icon'></i></span>
+                <h4>UI Designer <i class='bx bx-palette service-icon'></i></h4>
                 <p>I create intuitive, visually appealing user interfaces that enhance user experience. My designs focus on accessibility, responsiveness, and modern aesthetics while ensuring your website stands out.</p>
             </div>
         </div>
 
         <div class="service-box">
             <div class="service-info">
-                <h4>Front-end Developer</h4>
-                <span><i class='bx bx-code-alt service-icon'></i></span>
+                <h4>Front-end Developer   <i class='bx bx-code-alt service-icon'></i> </h4>
+              
                 <p>I transform designs into functional websites using HTML, CSS, and JavaScript. I implement responsive layouts, interactive elements, and ensure cross-browser compatibility for seamless user experiences.</p>
             </div>
         </div>
 
         <div class="service-box">
             <div class="service-info">
-                <h4>Back-end Developer</h4>
-                <span><i class='bx bx-server service-icon'></i></span>
+                <h4>Back-end Developer <i class='bx bx-server service-icon'></i> </h4>
                 <p>I build robust server-side applications that power your website. From database management to API integration, I ensure your site operates efficiently and securely with scalable architecture.</p>
             </div>
         </div>
 
         <div class="service-box">
             <div class="service-info">
-                <h4>React Developer</h4>
-                <span><i class='bx bxl-react service-icon'></i></span>
+                <h4>React Developer <i class='bx bxl-react service-icon'></i></h4>
                 <p>I specialize in building dynamic web applications using React. Leveraging component-based architecture, I create fast, interactive UIs with efficient state management and seamless user experiences.</p>
             </div>
         </div>
     </div>
 </section>
 
-        <section class="projects" id="projects">
-                <h2 class="heading">Projects</h2>
-        <div class="projects-box">
-                <h3><a href="https://66750876769ada179d58df58--kaleidoscopic-dragon-650c5a.netlify.app/" target="_blank">=> Taskmaster</a></h3> <br>
-                <p>Taskmaster is a web app built with React.js and Tailwind CSS, offering an intuitive task management tool. Features include:</p>
+</div>
 
-                    <ul>- Editing, deleting, and completing tasks</ul>
-                    <ul>- Filtering completed tasks</ul>
-                    <ul>-Clean,modern interface</ul>
-                    
-                  <p>Taskmaster helps users stay organized, focused, and productive, making it easier to conquer their to-do lists.</p>
-
-                  <br>
-                  <hr>
-                  <br>
-                  <br>
-
-                <h3><a href="https://taupe-panda-2ceef5.netlify.app/" target="_blank">=> Music Player</a></h3>
-                <p>Introducing MusicPlayer, a web-based music player. This JavaScript-powered platform stores songs in a JS file, allowing users to play, pause, and navigate through tracks. Features include: </p>
-                    
-                   <ul>- Interactive playback controls</ul>
-                    <ul>- Track listing and navigation</ul>
-                   <ul>- Simple, responsive design</ul>
-                    
-                   <p> MusicHub provides an elegant and user-friendly music streaming experience.</p>
-
-                   <br>
-                   <hr>
-                   <br>
-                   <br>
-
-                <h3><a href="https://hraday04.github.io/SimonSays/" target="_blank">=> Simon Says</a></h3>
-                <p>Introducing Simon Says Game!</p>
-                    
-                    <ul>*Game Rules:*</ul>
-                    
-                    <ul>1. Follow color sequences commanded by Simon.</ul>
-                    <ul>2. Repeat sequence by clicking colors.</ul>
-                    <ul>3. Failure to match sequence ends game.</ul>
-                    
-                    <ul>*Website Features:*</ul>
-                    
-                    <ul>- Interactive 4-color grid (red, green, yellow, blue)</ul>
-                    <ul>- Randomized Simon commands</ul>
-                    <ul>- Score tracking</ul>
-                    <ul>- Responsive design</ul>
-                    <ul>- Simple, intuitive gameplay</ul>
-                    
-                    <p>Test your memory and reflexes!</p>
+       <!-- Projects Section -->
+<section class="projects" id="projects">
+    <h2 class="heading">Projects</h2>
+    
+    <!-- Swiper container - Add these classes exactly as shown -->
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide">
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Taskmaster</h3>
+                        <div class="project-links">
+                            <a href="https://66750876769ada179d58df58--kaleidoscopic-dragon-650c5a.netlify.app/" target="_blank" class="project-link">
+                                <i class="fa-solid fa-globe"></i> Live Demo
+                            </a>                          
+                        </div>
+                    </div>              
+                    <div class="project-content">
+                        <p>Taskmaster is a web app built with React.js and Tailwind CSS, offering an intuitive task management tool. Features include:</p>
+                        <ul>
+                            <li>Editing, deleting, and completing tasks</li>
+                            <li>Filtering completed tasks</li>
+                            <li>Clean, modern interface</li>
+                        </ul>
+                        <p>Taskmaster helps users stay organized, focused, and productive, making it easier to conquer their to-do lists.</p>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">React.js</span>
+                        <span class="tech-tag">Tailwind CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Slide 2 -->
+            <div class="swiper-slide">
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Music Player</h3>
+                        <div class="project-links">
+                            <a href="https://taupe-panda-2ceef5.netlify.app/" target="_blank" class="project-link">
+                                <i class="fa-solid fa-globe"></i> Live Demo
+                            </a>                          
+                        </div>
+                    </div>               
+                    <div class="project-content">
+                        <p>Introducing MusicPlayer, a web-based music player. This JavaScript-powered platform stores songs in a JS file, allowing users to play, pause, and navigate through tracks. Features include:</p>
+                        <ul>
+                            <li>Interactive playback controls</li>
+                            <li>Track listing and navigation</li>
+                            <li>Simple, responsive design</li>
+                        </ul>
+                        <p>MusicHub provides an elegant and user-friendly music streaming experience.</p>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Slide 3 -->
+            <div class="swiper-slide">
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Simon Says</h3>
+                        <div class="project-links">
+                            <a href="https://hraday04.github.io/SimonSays/" target="_blank" class="project-link">
+                                <i class="fa-solid fa-globe"></i> Live Demo
+                            </a>                    
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <p>Introducing Simon Says Game!</p>
+                        <ul>
+                            <li>Interactive 4-color grid (red, green, yellow, blue)</li>
+                            <li>Randomized Simon commands</li>
+                            <li>Score tracking</li>
+                            <li>Responsive design</li>
+                            <li>Simple, intuitive gameplay</li>
+                        </ul>
+                        <p>Test your memory and reflexes!</p>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                </div>
+            </div>
         </div>
-        </section>
+        
+        <!-- Add navigation buttons -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        
+        <!-- Add pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+</section>
 
-        <section class="contact" id="contact">
+         <section class="contact" id="contact">
             <h2 class="heading">Contact <span style="color: aliceblue;">me</span></h2>
 
             <form action="">
@@ -229,20 +403,14 @@
                     <input type="submit" value="Send message" class="btn">
                 </div>
             </form>
-            </section>
+            </section> 
+        
 
             <footer class="footer">
                 <div class="social">
-                    <!-- <a href="https://www.linkedin.com/in/hraday-machhi-5a881b291/" class="soc" target="main"><img src="linkedin.jpeg"></a> -->
                     <a href="https://www.linkedin.com/in/hraday-machhi-5a881b291/" class="soc" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-
-                    <!-- <a href="https://github.com/Hraday04" class="soc" target="main"><img src="github.jpeg"></a> -->
                     <a href="https://github.com/Hraday04" class="soc" target="_blank"><i class="fa-brands fa-github"></i></a>
-
-                    <!-- <a href="https://www.instagram.com/rishi_s_back/" class="soc" target="main"><img src="instagram-brands-solid.svg" style="background-color: white"></a> -->
                     <a href="https://www.instagram.com/Deepak_ka_laal_" class="soc" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-
-                    <!-- <a href="https://x.com/HradayMachhi" class="soc" target="main"><img src="x.jpeg"></a> -->
                     <a href="https://x.com/HradayMachhi" class="soc" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
                 </div>
 
@@ -270,9 +438,15 @@
 
                 <p class="copyright">© Hraday Machhi | All Rights Reserved</p>
             </footer>
+        </section>
+            
 </body>
+
+
 <script src="script.js"></script>
+<script src="swiper.js"></script>
 </html>
+
 
 
 
