@@ -814,6 +814,7 @@ margin: 5px;
 }
 
 .service-box {
+
     background-color: yellow;
     border-radius: 10px;
     padding: 2rem;
@@ -1807,6 +1808,86 @@ h2.heading{
     .contact form textarea {
         padding: 1.5rem;
     }
+}/* General styles for the home section */
+.home-content {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 5rem 4rem;
+}
+
+.home-content h3 {
+    font-size: 2.6rem;
+}
+
+.home-content h1 {
+    font-size: 8rem;
+}
+
+.home-content p {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.home-img img {
+    width: 56vw;
+}
+
+.services h2 {
+    margin-bottom: 3rem;
+}
+
+.services-container {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-nav .nav-item {
+        margin: 0.5rem 0;
+    }
+
+    .home-content {
+        flex-direction: column;
+        align-items: center;
+        margin: 2rem 1rem;
+    }
+
+    .home-img {
+        order: 2; /* Ensure the image is placed after the content */
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .home-img img {
+        width: 50%; /* Adjust as needed */
+    }
+
+    .home-content h3, .home-content h1, .home-content p {
+        order: 1; /* Ensure the text content is placed before the image */
+        text-align: center;
+    }
+
+    .timeline-item {
+        display: flex;
+        flex-direction: row-reverse; /* Reverse the order of the items */
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .timeline-photo {
+        order: 1; /* Ensure the photo is on the right side */
+        margin-left: 20px; /* Adjust spacing as needed */
+    }
+
+    .timeline-description {
+        order: 2; /* Ensure the description is on the left side */
+        margin-right: 20px; /* Adjust spacing as needed */
+    }
 }
 
 /* Responsive Styles */
@@ -1850,4 +1931,89 @@ h2.heading{
 #timeline {
     padding: 50px 20px;
     background-color: black;
+}
+
+@media (max-width: 768px) {
+
+
+
+    .navbar{
+        width: 50vh;
+       object-fit: cover;
+    }
+
+    .education .heading{
+        text-align: left;
+        left: 50px;
+    }
+
+    .education{
+        margin-top: 100px;
+         width: 80vh;
+    }
+
+    .service-info h4{
+        font-weight: 600;
+    }
+
+#img {
+        height: 150px;
+        width: 150px;
+        right: auto;
+        margin-right: 50px;
+        box-shadow: none;
+    }
+
+    .desc {
+        display: flex;
+        flex-direction: row-reverse;
+        left: 0px;
+        order: 1;
+        /* Ensure the description is on the left side */
+        margin-right: 20px;
+        /* Adjust spacing as needed */
+    }
+
+    .details {
+        padding-top: 100px ;
+        text-align: left;
+    }
+
+    .timeline-item {
+        display: flex;
+        flex-direction: row-reverse;
+        /* Reverse the order of the items */
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .home-content{
+        display: block;
+    }
+
+    .services{
+      margin-top: 100px;
+    }
+
+    .projects{
+        margin-top: 150px;
+    }
+}
+
+.swiper {
+    width: 100%;
+    height: auto;
+    min-height: 400px;
+}
+
+.swiper-slide {
+    height: auto;
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 5%;
+    margin: 0 auto;
 }

@@ -111,9 +111,9 @@
                 <div class="home-content">
 
                     <div id="info"> <div class="desc" id="im "><h3 class="text-animation">I'm a <span></span></h3>
-                    <p><div class="details">I'm currently studying in SVIT for my degree of BE(Bachelor of Engineering).<br>
-                                            Looking forward to be absolute Full Stack Developer by giving my best.<br>
-                                            I also have an eager to learn Android Development.<br></div></p></div>
+                    <p><div class="details">I'm currently studying in SVIT for my degree of BE(Bachelor of Engineering)
+                                            Looking forward to be absolute Full Stack Developer by giving my best.
+                                            I also have an eager to learn Android Development.</div></p></div>
                  </div>
 
                  <div class="home-img">
@@ -382,25 +382,50 @@
     </div>
 </section>
 
+<script>
+      const scriptURL = "https://script.google.com/macros/s/AKfycbyaX-XVpbIqfIJhd10syuCxoJL8XVCPRkMe24NJtkLBD_8C78lAaHpS7oITphICOQpf/exec";
+     
+        document.addEventListener('DOMContentLoaded', function() {
+    const form = document.querySelector('.contact-form');
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const formData = new FormData(form);
+      fetch(scriptURL, { method: 'POST', body: formData })
+        .then(response => {
+          if (response.ok) {
+            alert('Form submitted successfully!');
+            form.reset();
+          } else {
+            alert('Form submission failed!');
+          }
+        })
+        .catch(error => {
+          console.error('Error!', error.message);
+          alert('Form submission failed!');
+        });
+    });
+  });
+    </script>
+
          <section class="contact" id="contact">
             <h2 class="heading">Contact <span style="color: aliceblue;">me</span></h2>
 
-            <form action="">
+            <form action="" class="contact-form">
                 <div class="input-group">
                     <div class="input-box">
-                        <input type="text" placeholder="Full name">
-                        <input type="email" placeholder="Email">
+                        <input type="text" placeholder="Full name" name="name">
+                        <input type="email" placeholder="Email" name="email">
                     </div>
 
                     <div class="input-box">
-                        <input type="number" placeholder="Phone number">
-                        <input type="text" placeholder="Subject">
+                        <input type="number" placeholder="Phone number" name="phone_no">
+                        <input type="text" placeholder="Subject" name="subject">
                     </div>
                 </div>
 
                 <div class="input-group-2">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-                    <input type="submit" value="Send message" class="btn">
+                    <textarea cols="30" rows="10" placeholder="Your Message" name="message"></textarea>
+                    <input type="submit" value="Send message" class="btn" name="message">
                 </div>
             </form>
             </section> 
@@ -439,12 +464,12 @@
                 <p class="copyright">© Hraday Machhi | All Rights Reserved</p>
             </footer>
         </section>
-            
-</body>
-
 
 <script src="script.js"></script>
 <script src="swiper.js"></script>
+            
+</body>
+
 </html>
 
 

@@ -50,6 +50,3 @@ navbar.onclick = () => {
     navbarAudioElement.play();
 };
 
-
-    
-
