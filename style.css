@@ -622,7 +622,7 @@ a.logo {
 
     .education-item:nth-child(odd) .education-card,
     .education-item:nth-child(even) .education-card {
-        left: 0;
+        left: 15%;
     }
 }
 
@@ -1404,7 +1404,7 @@ h2.heading {
 
     .projects,
     .services {
-        margin-top: 200%;
+        margin-top: 100%;
         padding: 2rem;
     }
 
@@ -1843,6 +1843,7 @@ h2.heading {
     }
 
     .education-card{
+        padding-top: 1.5rem; ;
         width: 100%;
     }
 
@@ -1857,7 +1858,7 @@ h2.heading {
 
 
     .service-box {
-        padding: 1.5rem;
+       display: flex;
     }
 
     .service-info h4 {
@@ -2085,9 +2086,7 @@ h2.heading {
         margin-top: 100px;
     }
 
-    .projects {
-        margin-top: 150px;
-    }
+
 }
 
 .swiper {
@@ -2100,10 +2099,3 @@ h2.heading {
     height: auto;
 }
 
-.services-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    padding: 5%;
-    margin: 0 auto;
-}
